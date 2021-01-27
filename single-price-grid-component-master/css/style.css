@@ -86,9 +86,6 @@ body {
   color: var(--LightGray);
   opacity: 0.5;
 }
-#monthly p {
-}
-
 #info {
   background-color: var(--cyan-light);
   grid-area: info;
