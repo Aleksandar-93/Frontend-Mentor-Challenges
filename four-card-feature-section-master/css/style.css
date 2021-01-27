@@ -27,4 +27,69 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: var(--VeryDarkBlue);
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-color: var(--VeryLightGray);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  /* margin-bottom: 40px; */
+}
+.header h1 {
+  margin: 0;
+  color: var(--GrayishBlue);
+  font-weight: 200;
+}
+.header h1 + h1 {
+  color: var(--VeryDarkBlue);
+  font-weight: 600;
+}
+.header p {
+  color: var(--GrayishBlue);
+}
+.main {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.main p {
+  color: var(--GrayishBlue);
+}
+.main .left-box {
+}
+.main .middle-box {
+}
+.main .right-box {
+}
+.cards {
+  max-width: 300px;
+  text-align: left;
+  margin-bottom: 30px;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0px 7px 15px 7px rgba(166, 198, 223, 0.47);
+}
+.cards h3 {
+  font-weight: 600;
+  margin: 0;
+}
+.cards p {
+  font-weight: 200;
+  margin: 5px;
+  font-size: small;
+}
+.cards img {
+  float: right;
+  margin-top: 30px;
+}
+/* Clear fix for float height lose.. */
+.cards::after {
+  content: " ";
+  display: table;
+  clear: both;
 }
