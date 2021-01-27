@@ -29,16 +29,13 @@ body {
   text-align: center;
   color: var(--VeryDarkBlue);
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   background-color: var(--VeryLightGray);
 }
 .container {
   display: flex;
   flex-direction: column;
 }
-.header {
-  /* margin-bottom: 40px; */
-}
+
 .header h1 {
   margin: 0;
   color: var(--GrayishBlue);
@@ -59,17 +56,10 @@ body {
 .main p {
   color: var(--GrayishBlue);
 }
-.main .left-box {
-}
-.main .middle-box {
-}
-.main .right-box {
-}
 .cards {
   max-width: 300px;
   text-align: left;
   margin-bottom: 30px;
-  border: 2px solid;
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0px 7px 15px 7px rgba(166, 198, 223, 0.47);
@@ -92,4 +82,57 @@ body {
   content: " ";
   display: table;
   clear: both;
+}
+
+/* border top */
+.left-box .cards {
+  border-top: 4px solid var(--Cyan);
+}
+.right-box .cards {
+  border-top: 4px solid var(--Blue);
+}
+.middle-box .cards:first-child {
+  border-top: 4px solid var(--Red);
+}
+.middle-box .cards:nth-child(2) {
+  border-top: 4px solid var(--Orange);
+}
+
+/* Media query */
+
+/* # Mobile */
+@media only screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    gap: 0;
+  }
+  .cards {
+    margin-bottom: 25px;
+  }
+  .header {
+    padding: 20px;
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
+  .header p {
+    padding: 0 25px 0 25px;
+  }
+}
+
+/* # Tablet */
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    gap: 0;
+  }
+  .cards {
+    margin-bottom: 25px;
+  }
+  .header {
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  .header p {
+    padding: 0 25px 0 25px;
+  }
 }
