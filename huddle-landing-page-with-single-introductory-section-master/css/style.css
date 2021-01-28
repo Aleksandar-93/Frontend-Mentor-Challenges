@@ -21,10 +21,10 @@ body {
 
 .header {
   text-align: left;
-  padding: 30px;
 }
 
 .logo img {
+  margin: 30px 0 20px 35px;
   max-width: 7.5rem;
 }
 
@@ -34,14 +34,16 @@ body {
 }
 
 .content {
-  padding: 0 25px 25px 25px;
+  padding: 25px 25px 25px 25px;
   color: #fff;
   font-weight: 400;
-  margin-bottom: 30px;
 }
 
 .content p {
   font-weight: 400;
+}
+.content-wrap {
+  margin-bottom: 200px;
 }
 
 .content button {
@@ -63,7 +65,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
 }
 .social a {
   width: 30px;
@@ -77,8 +78,56 @@ body {
   outline: none;
   color: #fff;
   cursor: pointer;
+  position: relative;
+  right: 0;
+  bottom: -67px;
 }
 .social a:active {
   border: 1px solid var(--SoftMagenta);
   color: var(--SoftMagenta);
+}
+
+@media only screen and (min-width: 980px) {
+  body {
+    background: var(--Violet) url(../images/bg-desktop.svg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+
+  .header-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    justify-content: center;
+  }
+  .register-wrap {
+    display: flex;
+    height: 100%;
+  }
+  .header {
+    padding: 50px;
+    margin-bottom: 85px;
+  }
+  .header img {
+    max-width: 10rem;
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .content button {
+    width: 35%;
+  }
+  .social {
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+  }
 }
