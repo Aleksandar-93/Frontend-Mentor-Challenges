@@ -148,6 +148,10 @@ body {
     z-index: 100;
     left: -24%;
     bottom: 15%;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: bounce-1;
+    animation-timing-function: linear;
   }
   .question-answer {
     max-width: 300px;
@@ -170,4 +174,16 @@ body {
 .rotate img {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+/* ilustration box animation */
+@keyframes bounce-1 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
