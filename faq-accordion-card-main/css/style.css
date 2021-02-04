@@ -156,10 +156,12 @@ body {
 /* JavaScript clases */
 
 .answer {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
 }
 .show .answer {
-  display: block;
+  height: 3rem;
 }
 .show .question {
   font-weight: bold;
