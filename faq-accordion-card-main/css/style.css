@@ -77,6 +77,9 @@ body {
   border-bottom: 1px solid #cacaca;
   align-items: center;
 }
+.question:hover {
+  color: var(--Soft-red);
+}
 
 .question img {
   height: 7px;
@@ -151,17 +154,17 @@ body {
 }
 
 /* JavaScript clases */
-.hide {
+
+.answer {
   display: none;
 }
-.show {
+.show .answer {
   display: block;
 }
-.rotate {
+.show .question {
+  font-weight: bold;
+}
+.rotate img {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-.bold {
-  font-weight: 700;
-  color: var(--Soft-red);
 }
