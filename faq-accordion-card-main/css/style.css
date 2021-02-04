@@ -83,6 +83,7 @@ body {
 
 .question img {
   height: 7px;
+  transition: all 0.3s linear;
 }
 
 /* # Tablet */
