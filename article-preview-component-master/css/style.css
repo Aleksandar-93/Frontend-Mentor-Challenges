@@ -22,6 +22,7 @@ body {
 }
 .img img {
   width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
 /* content text */
@@ -77,11 +78,12 @@ body {
   background: var(--Very-Dark-Grayish-Blue);
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   height: 100%;
   position: absolute;
   width: 100%;
   top: 0;
+  border-radius: 0 0 7px 7px;
 }
 .share-div {
   font-size: 0.8rem;
@@ -109,8 +111,19 @@ button {
   right: 8%;
   border: 0;
 }
-button img {
+button i {
+  color: var(--Grayish-Blue);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -100%);
 }
 .hide .share {
   display: none;
+}
+.btn-toggle button {
+  background: var(--Desaturated-Dark-Blue);
+}
+.btn-toggle button i {
+  color: #fff;
 }
