@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-size: 13px;
+  background: var(--Light-Grayish-Blue);
+}
+.container {
+  border-radius: 15px;
+  background: #fff;
+}
+/* img */
+.img {
+}
+.img img {
+  width: 100%;
+}
+
+/* content text */
+.content {
+}
+.text {
+  padding: 25px;
+}
+.text h4 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 700;
+  padding: 5px;
+}
+.text p {
+  font-weight: 400;
+  color: var(--Desaturated-Dark-Blue);
+}
+
+/* person */
+.person-wrap {
+  position: relative;
+  height: 55px;
+}
+
+/* person */
+.person {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  height: 100%;
+}
+.person-img {
+  margin: 0 20px;
+}
+.person-img img {
+  width: 40px;
+  border-radius: 50%;
+}
+.person-info {
+}
+.person-info h3 {
+  margin: 0;
+  font-weight: 700;
+}
+.person-info span {
+  color: var(--Grayish-Blue);
+}
+
+/* share */
+.share {
+  background: var(--Very-Dark-Grayish-Blue);
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.share-div {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 15px;
+  color: var(--Grayish-Blue);
+  letter-spacing: 2px;
+}
+.social-m {
+}
+.social-m img {
+  margin: 0 10px;
+}
+
+/* button */
+button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  cursor: pointer;
+  background: var(--Light-Grayish-Blue);
+  position: absolute;
+  top: 22%;
+  right: 8%;
+  border: 0;
+}
+button img {
+}
+.hide .share {
+  display: none;
+}
