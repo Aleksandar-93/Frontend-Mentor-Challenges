@@ -18,16 +18,14 @@ body {
   background: #fff;
 }
 /* img */
-.img {
-}
+
 .img img {
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
 
 /* content text */
-.content {
-}
+
 .text {
   padding: 25px;
 }
@@ -63,8 +61,7 @@ body {
   width: 40px;
   border-radius: 50%;
 }
-.person-info {
-}
+
 .person-info h3 {
   margin: 0;
   font-weight: 700;
@@ -92,8 +89,7 @@ body {
   color: var(--Grayish-Blue);
   letter-spacing: 2px;
 }
-.social-m {
-}
+
 .social-m img {
   margin: 0 10px;
 }
