@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+}
+.slide-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 90%;
+}
+.slide img {
+  width: 70%;
+}
+.slide-img {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide-text {
+}
+.slide-text p {
+  margin-top: 90px;
+  font-weight: 500;
+  color: var(--Dark-Blue);
+}
+.slide-text h3 {
+  margin: 0;
+  color: var(--Dark-Blue);
+  font-weight: 700;
+}
+.slide-text h4 {
+  margin: 0;
+  color: var(--Grayish-Blue);
+  font-weight: 300;
+}
+.slide-btn {
+  position: absolute;
+  bottom: -7%;
+  display: flex;
+  border: none;
+}
+.slide-btn #prev {
+  border-radius: 10px 0 0 10px;
+}
+.slide-btn #next {
+  border-radius: 0px 10px 10px 0;
+}
+.slide-btn button {
+  border: none;
+  height: 22px;
+}
+.slide-btn button img {
+  width: 50%;
+}
