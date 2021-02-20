@@ -6,26 +6,32 @@
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
 
-.container {
-}
 .slide-container {
+  background: url(../images/pattern-curve.svg) no-repeat;
+  background-position: bottom left;
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slide {
+  transition: all 0.7s linear;
+
+  background-position: 53px 161px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
-  width: 90%;
+  width: 100%;
 }
-.slide img {
+.slide img:first-child {
   width: 70%;
 }
 .slide-img {
@@ -35,7 +41,14 @@ body {
   justify-content: center;
   align-items: center;
 }
+.img-bg {
+  position: absolute;
+  z-index: -2;
+  width: 90%;
+}
 .slide-text {
+  background: url(../images/pattern-quotes.svg) no-repeat center 65px;
+  background-size: 75px;
 }
 .slide-text p {
   margin-top: 90px;
@@ -54,20 +67,101 @@ body {
 }
 .slide-btn {
   position: absolute;
-  bottom: -7%;
+  bottom: -3%;
   display: flex;
   border: none;
 }
 .slide-btn #prev {
-  border-radius: 10px 0 0 10px;
+  border-radius: 50% 0 0 50%;
 }
 .slide-btn #next {
-  border-radius: 0px 10px 10px 0;
+  border-radius: 0px 50% 50% 0;
 }
 .slide-btn button {
   border: none;
-  height: 22px;
+  height: 25px;
+  background: #fff;
 }
 .slide-btn button img {
   width: 50%;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 980px) {
+  .container {
+    height: 100vh;
+  }
+  .slide-container {
+    /* background: url(../images/pattern-bg.svg) no-repeat 102% 56%;
+    background-size: 60%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide {
+    flex-direction: row-reverse;
+  }
+  .slide-text {
+    width: 55%;
+    position: absolute;
+    left: 43px;
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    background-position: 12% 20%;
+    background-size: 125px;
+  }
+  .slide-img {
+    position: relative;
+    right: -23%;
+    height: 100%;
+    width: 450px;
+    box-shadow: 1px 10px 40px -12px #000000;
+  }
+  .slide-img img {
+    width: 129%;
+    left: -93px;
+  }
+  .slide-text p {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .slide-btn {
+    left: 100px;
+  }
+  .slide-btn button {
+    height: 45px;
+    width: 45px;
+  }
+
+  .img-bg {
+    left: 21px;
+  }
+  .slide img:first-child {
+    width: 100%;
+  }
+  #prev img {
+    width: 33%;
+  }
+  #next img {
+    width: 33%;
+  }
+}
+
+/* Desktop size*/
+
+@media only screen and (min-width: 1280px) {
+  .slide-img {
+    width: 600px;
+  }
+
+  .slide-text p {
+    font-size: 32px;
+  }
 }
