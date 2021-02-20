@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll('.slide');
-const nextBtn = document.getElementById('next');
-const prevBtn = document.getElementById('prev');
+const nextBtn = document.querySelectorAll('#next');
+const prevBtn = document.querySelectorAll('#prev');
 
 slides.forEach((slide, index) => {
     slide.style.position= 'absolute';
@@ -9,21 +9,27 @@ slides.forEach((slide, index) => {
 
 let counter = 0;
 
-nextBtn.addEventListener('click', ()=>{
+nextBtn.forEach(element => {
+    element.addEventListener('click', ()=>{
     counter++
     carousel();
     console.log(nextBtn);
 
 });
+});
 
-prevBtn.addEventListener('click', ()=>{
-    counter--
-    carousel();
-    console.log(prevBtn);
+prevBtn.forEach(element => {
+    element.addEventListener('click', ()=>{
+        counter--
+        carousel();
+        console.log(prevBtn);
+    });
 });
 
 
+
 function carousel(){
+    console.log(counter);
     if(counter === slides.length){
         counter = 0
     }
@@ -32,10 +38,9 @@ function carousel(){
     }
 
     slides.forEach((slide)=>{
-    slide.style.transform = `translateX(-${counter * 100}%)`
-    
-});
+        slide.style.transform = `translateX(-${counter * 100}%)`
+        
+    });
 
 };
 
-    
