@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll('.slide');
-const nextBtn = document.querySelectorAll('#next');
-const prevBtn = document.querySelectorAll('#prev');
+const nextBtn = document.querySelectorAll('.next');
+const prevBtn = document.querySelectorAll('.prev');
 
 slides.forEach((slide, index) => {
     slide.style.position= 'absolute';
