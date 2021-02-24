@@ -14,29 +14,67 @@ body {
   /* background-image: linear-gradient(to right, #f8bfbf, #ee8c8c); */
 }
 .container {
-  background: var(--Desaturated-Red);
+  /* background: var(--Desaturated-Red); */
 }
 .comging-soon {
 }
 .logo {
+  padding: 15px 35px;
 }
 .logo img {
+  width: 30%;
 }
 .mobile-img {
 }
 #mobile {
+  width: 100%;
 }
 .input {
+  text-align: center;
+  padding: 35px;
 }
 .input h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: xxx-large;
+  letter-spacing: 10px;
 }
 .input h1 span {
+  color: var(--Desaturated-Red);
+  font-weight: 300;
 }
 .input p {
+  color: var(--Desaturated-Red);
+  font-weight: 600;
 }
 #input {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+input::placeholder {
+  color: var(--Desaturated-Red);
 }
 #input input {
+  width: 100%;
+  outline: none;
+  height: 40px;
+  border-radius: 40px;
+  padding-left: 20px;
+  color: var(--Desaturated-Red);
+  border: 1px solid var(--Desaturated-Red);
+}
+.input button {
+  background: var(--Soft-Red);
+  position: absolute;
+  right: -18px;
+  height: 100%;
+  width: 20%;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
 }
 .img {
 }
