@@ -16,3 +16,33 @@ body {
 .container {
   background: var(--Desaturated-Red);
 }
+.comging-soon {
+}
+.logo {
+}
+.logo img {
+}
+.mobile-img {
+}
+#mobile {
+}
+.input {
+}
+.input h1 {
+}
+.input h1 span {
+}
+.input p {
+}
+#input {
+}
+#input input {
+}
+.img {
+}
+.img img {
+}
+
+.desktop-img {
+  display: none;
+}
