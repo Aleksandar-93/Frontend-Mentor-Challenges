@@ -28,8 +28,8 @@ function validateEmail(email) {
   return true;
 }
 
-  btn.addEventListener("click", validate);
 
+  btn.addEventListener("click", validate);
 
 
 
