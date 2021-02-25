@@ -65,16 +65,29 @@ input::placeholder {
   border: 1px solid var(--Desaturated-Red);
 }
 .input button {
-  background: var(--Soft-Red);
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+  cursor: pointer;
   position: absolute;
   right: -18px;
   height: 100%;
   width: 20%;
   border-radius: 25px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   outline: none;
+}
+.input button:hover {
+  background-image: linear-gradient(
+    to right,
+    hsl(0, 80%, 86%),
+    hsl(0, 80%, 86%)
+  );
 }
 .img {
 }
@@ -83,4 +96,23 @@ input::placeholder {
 
 .desktop-img {
   display: none;
+}
+.border-red {
+  border: 2px solid var(--Soft-Red) !important;
+}
+.invalid::before {
+  content: url("../images/icon-error.svg");
+  position: absolute;
+  left: -55%;
+  z-index: 4;
+}
+.validate-msg {
+  text-align: left;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  color: var(--Soft-Red) !important;
+}
+.good-mail {
+  color: green !important;
 }

@@ -1,5 +1,6 @@
 const email = document.querySelector('#input input');
 const btn = document.querySelector('#input button');
+const text = document.querySelector('.validate-msg');
 
     // validate Email
 function validateEmail(email) {
@@ -10,21 +11,24 @@ function validateEmail(email) {
   function validate() {
     const emValue = email.value;
   
-    if (validateEmail(emValue)) {
-      alert('good');
-    } else {
-      alert("not good")
-    }
-    return false;
+    if (validateEmail(emValue) == false) {
+      btn.classList.add('invalid');
+      email.classList.add("border-red")
+      text.textContent = 'please provide a valid email';
+      text.classList.remove('good-mail');
+      return false;
+  } else {
+      email.value = '';
+      btn.classList.remove('invalid');
+      email.classList.remove('border-red');
+      text.textContent = 'Successfull';
+      setTimeout(function(){ text.textContent = ""}, 3000);
+      text.classList.add('good-mail');
   }
-    // Clear input
-  function ClearFields() {
-      email.value = "";
-   }
-
+  return true;
+}
 
   btn.addEventListener("click", validate);
-  btn.addEventListener("click", ClearFields);
 
 
 
@@ -41,6 +45,8 @@ function validateEmail(email) {
 
 
 
-// function emailIsValid (email) {
-//     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
-//   }
+
+
+
+
+
