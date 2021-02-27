@@ -24,6 +24,7 @@ body {
   background: var(--Red) url(../images/bg-intro-mobile.png) no-repeat center;
   padding: 15px;
   margin: 0;
+  height: 100vh;
 }
 .intro-wrap {
   padding: 10px;
@@ -106,7 +107,7 @@ body {
   margin: 0;
 }
 #free-trail {
-  width: 100%;
+  width: 97%;
   height: 40px;
   border-radius: 5px;
   outline: none;
@@ -125,8 +126,41 @@ body {
   font-weight: 600;
 }
 .terms p {
+  font-size: 11px;
 }
 .terms span {
   color: var(--Red);
   font-weight: 700;
+}
+.button-wrap {
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: var(--Red) url(../images/bg-intro-desktop.png) no-repeat center;
+  }
+  .intro-wrap {
+    max-width: 45%;
+  }
+  .form-wrap {
+    min-width: 30%;
+  }
+  .intro {
+    text-align: left;
+  }
+  .intro h2 {
+    font-size: 250%;
+    font-weight: 700;
+    padding: 0 25px;
+  }
+}
+/* Dekstop */
+@media only screen and (min-width: 1200px) {
+  .intro-wrap {
+    max-width: 35%;
+  }
 }
