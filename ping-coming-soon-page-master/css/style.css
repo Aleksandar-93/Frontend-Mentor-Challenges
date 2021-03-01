@@ -81,8 +81,8 @@ body {
   border: 1px solid var(--Light-Red);
 }
 #valide {
-  border: 1px solid green;
-  color: green;
+  border: 1px solid green !important;
+  color: green !important;
 }
 .error-message {
   color: var(--Light-Red);
@@ -105,8 +105,7 @@ body {
 #notify:hover {
   box-shadow: 0px 0px 4px 4px var(--Pale-Blue);
 }
-.img-media {
-}
+
 .img {
   display: flex;
   justify-content: center;
@@ -114,8 +113,6 @@ body {
 .img img {
   width: 95%;
   margin-bottom: 150px;
-}
-.media-copy {
 }
 .media {
   display: flex;
@@ -155,4 +152,26 @@ body {
 .copy p {
   font-size: 50%;
   font-weight: 300;
+}
+/* Media  */
+@media only screen and (min-width: 550px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .notify-me {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .ping-wrap {
+    max-width: 600px;
+  }
+  #notify {
+    margin: 0;
+    width: 10rem;
+  }
+  .input input {
+    width: 90%;
+  }
 }

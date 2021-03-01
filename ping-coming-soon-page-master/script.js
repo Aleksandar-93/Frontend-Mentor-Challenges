@@ -23,7 +23,7 @@ function validateEmail(email) {
 } else {
   input.classList.remove('error');
   error.style.display="none";
-  email.value ="You are scribbled thank you";
+  email.value ="You are subscribed thank you";
   email.setAttribute('id',"valide");
   setTimeout(()=>{ 
     email.removeAttribute('id',"valide");
