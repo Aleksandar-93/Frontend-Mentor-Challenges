@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+:root {
+  /* ### Primary */
+  --Blue: hsl(223, 87%, 63%);
+  /* ### Secondary */
+  --Pale-Blue: hsl(223, 100%, 88%);
+  --Light-Red: hsl(354, 100%, 66%);
+  /* ### Neutral */
+  --Gray: hsl(0, 0%, 59%);
+  --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+.ping-wrap {
+  color: var(--Very-Dark-Blue);
+}
+.ping {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+  margin: 20px;
+}
+.ping h3 {
+  margin: 0;
+  font-weight: 300;
+  color: var(--Gray);
+}
+.ping h3 span {
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+.ping > p {
+  margin: 10px 0 30px 0;
+  font-size: 70%;
+  font-weight: 600;
+}
+.notify-me {
+  width: 95%;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.input ::-webkit-input-placeholder {
+  color: var(--Gray);
+  padding-left: 25px;
+  opacity: 0.6;
+}
+.input input {
+  width: 100%;
+  height: 35px;
+  border: 1px solid var(--Pale-Blue);
+  border-radius: 35px;
+  outline: none;
+}
+.error-message {
+  color: var(--Light-Red);
+  font-size: 50%;
+  font-weight: 600;
+  margin: 5px 0 10px 0;
+  display: none;
+}
+#notify {
+  margin: 10px 0 30px 0;
+  width: 100%;
+  height: 35px;
+  border: none;
+  background: var(--Blue);
+  border-radius: 35px;
+  color: #fff;
+}
+.img-media {
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+.img img {
+  width: 95%;
+  margin-bottom: 150px;
+}
+.media-copy {
+}
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.media a {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  border-radius: 50%;
+  border: 1px solid var(--Gray);
+}
+.media a i {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  font-size: 16px;
+  color: var(--Blue);
+}
+.copy {
+  display: flex;
+  justify-content: center;
+}
+.copy p {
+  font-size: 50%;
+  font-weight: 300;
+}
