@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
   <title>Frontend Mentor | Ping coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,18 +16,59 @@
 </head>
 <body>
 
-  We are launching soon!
+  <div class="container">
+    <div class="ping-wrap">
+      <!-- input content start -->
+      <div class="ping">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <h2>We are launching <span>soon!</span></h2>
+        <p>Subscribe and get notified</p>
+        <div class="notify-me">
+          <input type="text" placeholder="Your email address...">
+          <button id="notify">Notify Me</button>
+        </div>
+      </div>
+      <!-- input content end -->
+      <!-- img / media start -->
+      <div class="img-media">
+        <div class="img">
+          <img src="./images/illustration-dashboard.png" alt="illustration">
+        </div>
+        <div class="media-copy">
+          <div class="media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="copy">
+            <p>&copy; Copyright Ping. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+      <!-- img / media end -->
+    </div>
+  </div>
 
-  Subscribe and get notified
 
-  Notify Me
 
-  &copy; Copyright Ping. All rights reserved.
+
+
+
+
+  
+
+  
+
+  
+
+  
 
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Aleksnadar Milenkovic</a>.
     </p>
   </footer>
 </body>
