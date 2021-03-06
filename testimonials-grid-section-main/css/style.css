@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+:root {
+  /* ### Primary */
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%); /* ### Neutral */
+  --Light-gray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background: var(--Light-grayish-blue);
+}
+
+.cards {
+}
+
+.card {
+  padding: 25px;
+  border-radius: 10px;
+  margin: 20px 5px;
+}
+
+.card p {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.card span {
+  opacity: 70%;
+  font-size: 88%;
+}
+
+.person {
+  display: flex;
+}
+
+.person img {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid var(--Moderate-violet);
+  margin-right: 15px;
+}
+.name {
+}
+
+.name h3 {
+  margin: 0;
+  font-size: 100%;
+}
+
+.name span {
+  font-size: 87%;
+  opacity: 50%;
+}
+
+/* cards */
+.card-1 {
+  background: var(--Moderate-violet) url(../images/bg-pattern-quotation.svg)
+    no-repeat 90% 0;
+  color: var(--White);
+}
+
+.card-2 {
+  background: var(--Very-dark-blackish-blue);
+  color: var(--White);
+}
+
+.card-3 {
+  background: var(--White);
+  color: var(--Very-dark-blackish-blue);
+}
+
+.card-4 {
+  background: #000;
+  color: var(--White);
+}
+
+.card-5 {
+  background: var(--White);
+  color: var(--Very-dark-blackish-blue);
+}
