@@ -50,3 +50,18 @@ ul li img {
   width: 350px;
   border-radius: 10px 10px 0 0;
 }
+/* buttons */
+
+.buttons button {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  min-width: 60px;
+  border: 1px solid #888;
+  margin: 5px 3px;
+  cursor: pointer;
+}
+.buttons button:hover {
+  background: #888;
+  color: #fff;
+}

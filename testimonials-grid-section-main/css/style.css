@@ -22,9 +22,6 @@ body {
   background: var(--Light-grayish-blue);
 }
 
-.cards {
-}
-
 .card {
   padding: 25px;
   border-radius: 10px;
@@ -51,8 +48,6 @@ body {
   border-radius: 30px;
   border: 1px solid var(--Moderate-violet);
   margin-right: 15px;
-}
-.name {
 }
 
 .name h3 {
