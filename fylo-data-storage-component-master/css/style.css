@@ -28,7 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   background: url("../images/bg-mobile.png") no-repeat center;
-  min-height: 800px;
+  /* min-height: 800px; */
   width: 375px;
 }
 
@@ -42,9 +42,6 @@ body {
 
 .logo {
   margin: 40px 0 20px 30px;
-}
-
-.logo img {
 }
 
 .doc {
@@ -78,6 +75,7 @@ body {
   padding: 25px 0;
   border-radius: 10px;
   color: #fff;
+  position: relative;
 }
 
 .storage-wrap div {
@@ -85,9 +83,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.text {
 }
 
 .text p {
@@ -120,7 +115,7 @@ body {
     hsl(335, 100%, 65%) 100%
   );
   position: relative;
-  left: -21px;
+  left: -22px;
   border-radius: 10px;
   height: 14px;
 }
@@ -131,7 +126,7 @@ body {
   background: #fff;
   border-radius: 50%;
   position: relative;
-  right: -96px;
+  right: -55%;
 }
 
 .min {
@@ -173,4 +168,56 @@ body {
   color: #000;
   font-weight: 600;
   margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  .flyo-wrap {
+    flex-direction: row;
+    background: url(../images/bg-desktop.png) no-repeat bottom;
+    background-size: contain;
+    background-color: var(--Very-Dark-Blue);
+    width: 100%;
+    height: 70vh;
+  }
+  .flyo-doc {
+    width: 350px;
+    margin-right: 20px;
+  }
+  .storage-wrap {
+    width: 550px;
+  }
+  .storage-wrap div {
+    justify-content: left;
+    padding: 0 30px;
+  }
+  /* slide */
+
+  .slide {
+    width: 90%;
+  }
+  .slide div {
+    left: -28px;
+  }
+  .slide div span {
+    right: -105%;
+  }
+  /* gb left */
+  .gb-left {
+    transform: translate(50%, -222%);
+  }
+  .triangle {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 0;
+    height: 0;
+    z-index: -110;
+    border-style: solid;
+    border-width: 40px 40px 40px 0;
+    border-color: transparent #fff transparent transparent;
+  }
 }
