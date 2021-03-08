@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 :root {
-  /* ### Primary */
-  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%); /* ### Neutral */
+  --Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
   --Pale-Blue: hsl(243, 100%, 93%);
   --Grayish-Blue: hsl(229, 7%, 55%);
   --Dark-Blue: hsl(228, 56%, 26%);
@@ -10,9 +9,10 @@
 
 body {
   box-sizing: border-box;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  font-family: Raleway, sans-serif;
   font-size: 14px;
+  background: var(--Pale-Blue);
 }
 
 .container {
@@ -27,12 +27,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url("../images/bg-mobile.png") no-repeat center;
-  /* min-height: 800px; */
+  background: url("../images/bg-mobile.png") center center no-repeat;
   width: 375px;
 }
 
-/* flyo document  */
 .flyo-doc {
   width: 85%;
   background: var(--Dark-Blue);
@@ -41,21 +39,21 @@ body {
 }
 
 .logo {
-  margin: 40px 0 20px 30px;
+  margin: 40px 0px 20px 30px;
 }
 
 .doc {
   height: 70px;
   display: flex;
   justify-content: left;
-  padding: 0 30px;
+  padding: 0px 30px;
 }
 
 .doc div {
   width: 25px;
   height: 25px;
   padding: 10px;
-  background: #000;
+  background: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,21 +63,20 @@ body {
 }
 
 .doc img {
-  background: #000;
+  background: rgb(0, 0, 0);
 }
 
-/* storage element */
 .storage-wrap {
   width: 85%;
   background: var(--Dark-Blue);
-  padding: 25px 0;
+  padding: 25px 0px;
   border-radius: 10px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: relative;
 }
 
 .storage-wrap div {
-  padding: 0 16px;
+  padding: 0px 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,8 +108,8 @@ body {
   width: 79%;
   background: linear-gradient(
     90deg,
-    hsl(6, 100%, 80%) 0%,
-    hsl(335, 100%, 65%) 100%
+    rgb(255, 163, 153) 0%,
+    rgb(255, 77, 151) 100%
   );
   position: relative;
   left: -22px;
@@ -123,7 +120,7 @@ body {
 .slide span {
   width: 12px;
   height: 12px;
-  background: #fff;
+  background: rgb(255, 255, 255);
   border-radius: 50%;
   position: relative;
   right: -55%;
@@ -131,31 +128,30 @@ body {
 
 .min {
   position: absolute;
-  left: 0;
+  left: 0px;
   top: 25px;
   font-size: 85%;
 }
 
 .max {
   position: absolute;
-  right: 0;
+  right: 0px;
   top: 25px;
   font-size: 85%;
 }
 
-/* gb left */
 .gb-left {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -12%);
-  padding: 0 !important;
+  padding: 0px !important;
 }
 
 .gb-left p {
   font-size: 11px;
   font-weight: 600;
   color: var(--Grayish-Blue);
-  background: #fff;
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,59 +161,70 @@ body {
 
 .gb-left span {
   font-size: 300%;
-  color: #000;
+  color: rgb(0, 0, 0);
   font-weight: 600;
   margin-right: 10px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 968px) {
   .container {
     display: flex;
     align-items: center;
   }
+
   .flyo-wrap {
     flex-direction: row;
-    background: url(../images/bg-desktop.png) no-repeat bottom;
+    background-image: url("../images/bg-desktop.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
     background-size: contain;
     background-color: var(--Very-Dark-Blue);
-    width: 100%;
+    width: 1000px;
     height: 70vh;
   }
+
   .flyo-doc {
     width: 350px;
     margin-right: 20px;
   }
+
   .storage-wrap {
     width: 550px;
   }
+
   .storage-wrap div {
     justify-content: left;
-    padding: 0 30px;
+    padding: 0px 30px;
   }
-  /* slide */
 
   .slide {
     width: 90%;
   }
+
   .slide div {
     left: -28px;
   }
+
   .slide div span {
     right: -105%;
   }
-  /* gb left */
+
   .gb-left {
     transform: translate(50%, -222%);
   }
+
   .triangle {
     position: absolute;
-    right: 0;
+    right: 0px;
     top: 20px;
-    width: 0;
-    height: 0;
+    width: 0px;
+    height: 0px;
     z-index: -110;
     border-style: solid;
-    border-width: 40px 40px 40px 0;
-    border-color: transparent #fff transparent transparent;
+    border-width: 40px 40px 40px 0px;
+    border-color: transparent rgb(255, 255, 255) transparent transparent;
   }
 }
