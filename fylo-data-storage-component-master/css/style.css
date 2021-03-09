@@ -50,19 +50,25 @@ body {
 }
 
 .doc div {
-  width: 25px;
-  height: 25px;
   padding: 10px;
-  background: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 7px;
-  margin-right: 16px;
-  cursor: pointer;
 }
-
-.doc img {
+.doc button {
+  background: rgb(0, 0, 0);
+  width: 45px;
+  height: 40px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.doc button:hover {
+  opacity: 0.7;
+}
+.doc button img {
   background: rgb(0, 0, 0);
 }
 
@@ -182,8 +188,8 @@ body {
     background-clip: initial;
     background-size: contain;
     background-color: var(--Very-Dark-Blue);
-    width: 1000px;
-    height: 70vh;
+    width: 100vw;
+    height: 100vh;
   }
 
   .flyo-doc {
