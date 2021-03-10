@@ -65,3 +65,46 @@ ul li img {
   background: #888;
   color: #fff;
 }
+
+/*  attribution */
+.made {
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  background-color: cornflowerblue;
+  transition: all 0.3s;
+  color: #fff;
+}
+.made a {
+  text-decoration: none;
+}
+.made-show {
+  width: 270px;
+  height: 100px;
+  visibility: visible;
+  border-radius: 12px;
+}
+.a-m {
+  visibility: visible;
+  position: fixed;
+  left: 5px;
+  bottom: 5px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  opacity: 0.7;
+  color: #fff;
+  transition: all 0.2s;
+}
+.a-m:hover {
+  opacity: 1;
+}
+.a-m-red {
+  background: crimson;
+}

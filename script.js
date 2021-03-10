@@ -1,8 +1,12 @@
+// filter buttons
 const all = document.querySelector('#all');
 const htmlCss = document.querySelector('#html-css');
 const htmlCssJs = document.querySelector('#html-css-js');
 const listItems = document.querySelectorAll('ul li');
 
+
+
+// filter buttons
 
 // html css elements
 htmlCss.addEventListener('click', () =>{
@@ -36,3 +40,12 @@ all.addEventListener('click', () =>{
         e.style.display="block";
     });
 });
+
+ /* \\\\ attribution ////*/
+const amBtn = document.querySelector('.a-m');
+const made = document.querySelector('.made');
+
+ amBtn.addEventListener('click', ()=>{
+     made.classList.toggle('made-show');
+     amBtn.classList.toggle('a-m-red');
+ });
