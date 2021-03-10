@@ -49,3 +49,16 @@ const made = document.querySelector('.made');
      made.classList.toggle('made-show');
      amBtn.classList.toggle('a-m-red');
  });
+
+//  scroll show
+
+const topLink = document.querySelector('.top-link');
+window.addEventListener('scroll', ()=>{
+    const scrollHeight = window.pageYOffset;
+    if(scrollHeight > 300){
+        topLink.classList.add('show-link')
+    }else{
+        topLink.classList.remove('show-link')
+        
+    }
+});
