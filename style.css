@@ -62,11 +62,15 @@ ul li img {
   min-width: 60px;
   border: 1px solid #888;
   margin: 5px 3px;
-  cursor: pointer;
-}
-.buttons button:hover {
-  background: #888;
   color: #fff;
+  cursor: pointer;
+  background: cornflowerblue;
+  opacity: 0.8;
+  font-weight: 900;
+}
+
+.buttons button:hover {
+  opacity: 1;
 }
 
 /*  attribution */
@@ -122,8 +126,7 @@ ul li img {
   background: cornflowerblue;
   width: 2rem;
   height: 2rem;
-  display: grid;
-  place-items: center;
+  text-align: center;
   border-radius: 10px;
   color: #fff;
   animation: bounce 5s ease-in-out infinite;
@@ -134,6 +137,7 @@ ul li img {
 .top-link:hover {
   opacity: 1;
 }
+
 .show-link {
   visibility: visible;
   z-index: 100;
