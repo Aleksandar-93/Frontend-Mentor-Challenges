@@ -25,9 +25,19 @@
 
 body {
   background: url(../images/bg-pattern.svg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--Very-Pale-Blue);
 }
 
 .pricing-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* header */
@@ -138,6 +148,9 @@ body {
   align-items: center;
   margin-bottom: 50px;
 }
+.dis-show {
+  display: none;
+}
 
 .discount p {
   font-size: 12px;
@@ -175,12 +188,15 @@ body {
 
 /* start trail */
 .start-trail {
-  width: 100%;
-  border-top: 1px solid var(--Grayish-Blue);
+  background: var(--White);
+  width: 90%;
+  border-top: 2px solid var(--Light-Grayish-Blue);
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 34px;
+  border-radius: 0 0 10px 10px;
 }
 
 .start-trail ul {
@@ -204,6 +220,7 @@ body {
   height: 35px;
   border-radius: 35px;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .start-trail button:hover {
   color: var(--White);
@@ -211,4 +228,43 @@ body {
 }
 .attribution {
   margin-top: 100px;
+}
+
+/* desktop size */
+@media only screen and (min-width: 550px) {
+  .pricing-wrap {
+  }
+  .amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .monthly {
+    margin-top: 0;
+  }
+  .slider {
+    top: 0;
+    margin-bottom: 40px;
+  }
+  .start-trail {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .start-trail ul {
+    align-items: flex-start;
+  }
+  .start-trail button {
+    width: 30%;
+  }
+  .dis-show {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    background-size: contain;
+  }
 }
