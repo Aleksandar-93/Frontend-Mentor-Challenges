@@ -117,16 +117,17 @@ body {
   border-radius: 10px;
   background: linear-gradient(
     90deg,
-    var(--Soft-Cyan) 60%,
-    var(--Light-Grayish-Blue) 60%
+    var(--Strong) 50%,
+    var(--Very-Pale-Blue) 50%
   );
   outline: none;
   /* opacity: 0.7; */
-  transition: opacity 0.2s;
+  /* transition: opacity 0.2s; */
 }
 #slider:hover {
   /* opacity: 1; */
 }
+
 #slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -139,7 +140,12 @@ body {
   box-shadow: 0px 10px 10px 5px var(--Soft-Cyan);
 }
 #slider::-webkit-slider-thumb:hover {
-  background-color: var(--Soft-Cyan);
+  background-color: hsl(174, 87%, 63%);
+  transition: 0.2s;
+}
+#slider::-webkit-slider-thumb:active {
+  background-color: hsl(174, 70%, 44%);
+  transition: 0.2s;
 }
 
 /* Slider end */
