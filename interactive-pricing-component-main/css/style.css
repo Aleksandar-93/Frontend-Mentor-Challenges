@@ -10,7 +10,7 @@
   --White: hsl(0, 0%, 100%);
   --Very-Pale-Blue: hsl(230, 100%, 99%);
   --Light-Grayish-Blue: hsl(224, 65%, 95%);
-  --Light-Grayish-Blue: hsl(223, 50%, 87%);
+  --Light-Grayish-Blue2: hsl(223, 50%, 87%);
   --Grayish-Blue: hsl(225, 20%, 60%);
   --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
 }
@@ -112,8 +112,8 @@ body {
   border-radius: 10px;
   background: linear-gradient(
     90deg,
-    var(--Strong) 50%,
-    var(--Very-Pale-Blue) 50%
+    var(--Soft-Cyan) 50%,
+    var(--Light-Grayish-Blue) 50%
   );
   outline: none;
 }
@@ -127,7 +127,7 @@ body {
   background: var(--Strong) url(../images/icon-slider.svg) no-repeat center
     center;
   cursor: pointer;
-  box-shadow: 0px 10px 10px 5px var(--Soft-Cyan);
+  box-shadow: 0px 10px 20px 5px #a5f3eb;
 }
 #slider::-webkit-slider-thumb:hover {
   background-color: hsl(174, 87%, 63%);
@@ -265,6 +265,11 @@ body {
   }
   .dis-show {
     display: inline;
+  }
+  .discount {
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 30px;
   }
 }
 
