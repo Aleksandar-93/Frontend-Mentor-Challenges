@@ -30,7 +30,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: var(--Very-Pale-Blue);
+  background-color: hsl(240, 20%, 98%);
 }
 
 .pricing-wrap {
@@ -73,11 +73,8 @@ body {
   margin: 0 auto;
   padding: 10px;
   background: var(--White);
-  /* background: radial-gradient(black, transparent); */
-  border-radius: 10px;
-}
-
-.amount {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px -2px 16px 4px hsl(222deg 54% 90%);
 }
 
 .amount h4 {
@@ -89,8 +86,6 @@ body {
   text-align: center;
 }
 
-.amount h4 span {
-}
 .monthly {
   margin-top: 70px;
   display: flex;
@@ -121,11 +116,6 @@ body {
     var(--Very-Pale-Blue) 50%
   );
   outline: none;
-  /* opacity: 0.7; */
-  /* transition: opacity 0.2s; */
-}
-#slider:hover {
-  /* opacity: 1; */
 }
 
 #slider::-webkit-slider-thumb {
@@ -183,6 +173,16 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
+.toggle-btn:hover {
+  background: var(--Soft-Cyan);
+}
+.toggle-active {
+  align-items: flex-end;
+  background-color: var(--Strong);
+}
+.toggle-active:hover {
+  background-color: var(--Strong);
+}
 
 .inner-circle {
   width: 14px;
@@ -203,6 +203,7 @@ body {
   align-items: center;
   padding-bottom: 34px;
   border-radius: 0 0 10px 10px;
+  box-shadow: 0px 6px 16px 4px hsl(222deg 54% 90%);
 }
 
 .start-trail ul {
@@ -238,8 +239,6 @@ body {
 
 /* desktop size */
 @media only screen and (min-width: 550px) {
-  .pricing-wrap {
-  }
   .amount {
     display: flex;
     align-items: center;
