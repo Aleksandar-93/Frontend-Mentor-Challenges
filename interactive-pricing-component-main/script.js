@@ -9,23 +9,21 @@ const toggleBtn = document.querySelector('.toggle-btn');
 
 // toggle button discount on klick
 toggleBtn.addEventListener('click', discount);
+toggleBtn.addEventListener('keypress', discount);
+
 
 // starting output
 output.innerHTML = `$${priceArr[slider.value]}.00`;
 view.innerHTML = viewArr[slider.value];
 
-// output change when drag
+// output change when drag // slider move
 slider.oninput = function(){
     output.innerHTML = `$${priceArr[this.value]}.00`; 
     view.innerHTML = viewArr[this.value]; 
+    sliderMove();
+    
 }
 
-// this allows the color in the slider to move
-slider.addEventListener('mousemove', ()=>{
-    let x = slider.value*25;
-    let color = `linear-gradient(90deg, hsl(174, 77%, 80%)${x}% , hsl(224, 65%, 95%)${x}%)`;
-    slider.style.background = color;
-});
 
 
 // discount function 
@@ -40,14 +38,22 @@ function discount(){
         slider.oninput = function(){
             output.innerHTML = `$${discount[this.value]}.00`; 
             view.innerHTML = viewArr[this.value]; 
+            sliderMove();
         }
         }else{
         output.innerHTML = `$${removeDiscount[slider.value]}.00`;
         slider.oninput = function(){
             output.innerHTML = `$${removeDiscount[this.value]}.00`; 
-        view.innerHTML = viewArr[this.value]; 
-    
+            view.innerHTML = viewArr[this.value]; 
+            sliderMove();
         }
         }
     }
 
+
+    // slider color  move function 
+    function sliderMove(){
+        let x = slider.value*25;
+        let color = `linear-gradient(90deg, hsl(174, 77%, 80%)${x}% , hsl(224, 65%, 95%)${x}%)`;
+        slider.style.background = color;
+    }
