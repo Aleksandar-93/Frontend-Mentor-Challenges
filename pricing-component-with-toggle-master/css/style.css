@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --Linear-Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+
+  /* ### Neutral */
+
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  background-color: var(--Very-Light-Grayish-Blue);
+  /* url(../images/bg-bottom.svg) no-repeat bottom left; */
+}
+.pricing-wrap {
+  /* background: url(../images/bg-top.svg) no-repeat scroll 110% 0%; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: var(--Grayish-Blue);
+}
+/* pricing toggle */
+.pricing-toggle {
+  text-align: center;
+  margin-bottom: 29px;
+}
+.pricing-toggle h2 {
+  margin: 20px 0;
+}
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.toggle-btn p {
+  font-size: 80%;
+}
+.toggle-wrap {
+  width: 40px;
+  margin: 0 10px;
+  height: 21px;
+  background: #7385e5;
+  border-radius: 10px;
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.inner-tggle {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: var(--Very-Light-Grayish-Blue);
+}
+
+/* pricing cards */
+.price-cards > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  width: 90%;
+  margin: 20px auto;
+  color: var(--Dark-Grayish-Blue);
+  border-radius: 10px;
+}
+.price-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.price-cards > div h4 {
+  margin: 10px 0;
+}
+.price {
+  font-size: 250%;
+}
+.price-cards > div p {
+  width: 80%;
+  padding: 10px 0;
+  border-top: 1px solid var(--Light-Grayish-Blue);
+}
+.price-cards > div p:last-of-type {
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+  margin-bottom: 15px;
+}
+.price-cards > div button {
+  width: 80%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 18px;
+  background: linear-gradient(
+    142deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 50%
+  );
+  color: #fff;
+  font-weight: 700;
+}
+
+.price-cards div:nth-child(2) {
+  background: linear-gradient();
+  color: var(--Very-Light-Grayish-Blue);
+  background: hsl(236, 72%, 79%);
+  background: linear-gradient(
+    142deg,
+    hsl(236, 72%, 79%) 0%,
+    hsl(237, 63%, 64%) 39%
+  );
+}
+.price-cards div:nth-child(2) button {
+  background: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+@media only screen and (min-width: 375px) {
+  .pricing-wrap {
+    max-width: 370px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .pricing-wrap {
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    max-width: 850px;
+  }
+  .price-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .professional {
+    height: 350px;
+  }
+}
