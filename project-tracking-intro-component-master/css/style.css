@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+:root {
+  /* ### Primary */
+  --Red: hsl(0, 100%, 68%);
+  /* ### Neutral */
+  --Very-Dark-Blue: hsl(230, 29%, 20%);
+  --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+  --Grayish-Blue: hsl(231, 7%, 65%);
+  --Light-Grayish-Blue: hsl(207, 33%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tracking-container {
+}
+
+.toggle-menu-wrap {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 45vh;
+}
+.illustration {
+  position: absolute;
+  width: 500px;
+  top: 10%;
+  left: 10%;
+}
+.gray {
+  background: var(--Light-Grayish-Blue);
+  height: 45vh;
+  position: absolute;
+  z-index: -22;
+  border-radius: 0 0 0 30px;
+  right: 0;
+  width: 50%;
+}
+
+.logo {
+  width: 25px;
+  margin: 20px;
+}
+
+.toggle-menu {
+}
+
+.toggle {
+  width: 20px;
+  height: 20px;
+  margin: 20px 30px;
+  background: url("../images/icon-hamburger.svg") no-repeat;
+  border: none;
+  outline: none;
+}
+
+.toggle-menu ul {
+  list-style-type: none;
+  position: absolute;
+  /* top: 20px; */
+  left: 50%;
+  transform: translate(-50%, 50px);
+  width: 300px;
+  height: 200px;
+  background: #fff;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -1px 16px 5px rgba(0, 0, 0, 0.43);
+  border-radius: 5px;
+  display: none;
+}
+
+.toggle-menu ul li {
+  margin: 10px;
+}
+
+.toggle-menu ul li a {
+  color: var(--Very-Dark-Blue);
+  text-decoration: none;
+}
+.toggle-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.toggle-menu ul li:last-child {
+  width: 85%;
+  border-top: 1px solid var(--Grayish-Blue);
+  padding-top: 15px;
+  text-align: center;
+}
+.toggle-menu ul li:last-child a {
+  color: var(--Grayish-Blue);
+}
+
+.main-wrap {
+  font-weight: 600;
+  padding: 10px;
+}
+
+.mongograph {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mongograph span {
+  padding: 3px 8px;
+  color: #fff;
+  background: #000;
+  font-size: 80%;
+  border-radius: 20px;
+  margin-right: 15px;
+}
+
+.mongograph p {
+  text-transform: uppercase;
+}
+
+.main-wrap h1 {
+  text-transform: uppercase;
+  font-weight: inherit;
+  margin-bottom: 15px;
+}
+
+.main-wrap p {
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 400;
+  font-size: 90%;
+}
+
+.text-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.text-btn button {
+  text-transform: uppercase;
+  padding: 11px 14px;
+  background: var(--Red);
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 60%;
+  margin-right: 15px;
+}
+
+.text-btn p {
+  text-transform: uppercase;
+}
+
+/* toggle class */
+
+.show-menu .toggle {
+  background: url(../images/icon-close.svg) no-repeat;
+}
+.show-menu ul {
+  display: flex;
+}
