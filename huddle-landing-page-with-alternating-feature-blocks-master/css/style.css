@@ -107,8 +107,7 @@ main section {
 main section:last-of-type {
   margin-bottom: 130px;
 }
-.text {
-}
+
 .text h2 {
   margin: 10px;
   font-size: 120%;
@@ -235,6 +234,9 @@ footer img {
 @media only screen and (min-width: 1180px) {
   .btn {
     padding: 20px 50px;
+  }
+  header {
+    background: url(../images/bg-hero-desktop.svg);
   }
   header section {
     display: flex;
