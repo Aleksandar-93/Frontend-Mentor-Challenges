@@ -2,20 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 :root {
   /* ### Primary */
-
   --Dark-Blue-intro-email: hsl(217, 28%, 15%);
   --Dark-Blue-main-background: hsl(218, 28%, 13%);
   --Dark-Blue-footer-background: hsl(216, 53%, 9%);
   --Dark-Blue-testimonials-background: hsl(219, 30%, 18%);
-
   /* ### Accent */
-
   --Cyan: hsl(176, 68%, 64%);
   --Blue: hsl(198, 60%, 50%);
   --Light-Red: hsl(0, 100%, 63%);
-
   /* ### Neutral */
-
   --White: hsl(0, 0%, 100%);
 }
 
@@ -27,7 +22,275 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: var(--Dark-Blue-main-background);
+  color: var(--White);
 }
+
 header {
   font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px;
+  margin-bottom: 15px;
 }
+
+main {
+  padding: 0 30px;
+  text-align: center;
+}
+footer {
+  padding: 0 15px;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 10px 30px;
+  width: 70%;
+  border-radius: 40px;
+  border: none;
+  font-weight: 600;
+}
+button:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  margin: 10px 0;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+/* header start */
+.logo {
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav-bar {
+  padding-top: 7px;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar li {
+  list-style: none;
+  margin-left: 8px;
+}
+
+.nav-bar a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+/* header end */
+/* main start */
+.main-article {
+  margin-bottom: 100px;
+}
+
+.img img {
+}
+
+.main-article h1 {
+  font-size: 140%;
+  font-weight: 600;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.main-article p {
+  margin-bottom: 30px;
+}
+
+.main-article button {
+}
+
+.cards {
+  padding-bottom: 100px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card img {
+  width: 80px;
+}
+
+.card h3 {
+}
+
+.card p {
+}
+
+.text {
+  text-align: left;
+  margin-bottom: 100px;
+}
+
+.text h1 {
+}
+
+.text p {
+}
+
+.text p a {
+  display: flex;
+  color: var(--Cyan);
+  text-decoration: none;
+  border-bottom: 1px solid;
+  width: 148px;
+}
+
+.text p a img {
+  width: 20px;
+  margin-bottom: 2px;
+}
+
+.comments {
+}
+.bg-qutes {
+  width: 25px;
+  height: 19px;
+}
+.bg-qutes img {
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.comment {
+  text-align: left;
+  background: var(--Dark-Blue-testimonials-background);
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.comment p {
+}
+
+.profile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 40px;
+  margin: 0 10px 0 0;
+}
+
+.info {
+}
+
+.name {
+  font-weight: 600;
+}
+
+.postition {
+  font-size: 80%;
+  opacity: 0.7;
+}
+.early-access {
+  margin: 60px 0;
+  background: var(--Dark-Blue-intro-email);
+  border-radius: 10px;
+}
+.early-access h1 {
+}
+.early-access p {
+}
+.input-bar-btn {
+}
+.input-bar-btn input {
+  background-color: var(--White);
+  padding: 10px 30px;
+  width: 95%;
+  border-radius: 40px;
+  border: none;
+  margin-bottom: 20px;
+}
+.input-bar-btn button {
+  width: 95%;
+}
+
+/* main end */
+
+/* footer start */
+.logo-location {
+}
+.logo-location > img {
+  width: 60%;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+footer div div img {
+  width: 15px;
+  margin: 4px 10px 0 0;
+}
+footer div div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  padding: 2px;
+}
+
+.logo-location div p {
+}
+.list-links {
+}
+.list-links ul {
+  padding: 0;
+  margin-left: 5px;
+}
+.list-links ul li:nth-child(4) {
+  margin-bottom: 30px;
+}
+.list-links ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.list-links ul li a {
+  text-decoration: none;
+  color: var(--White);
+}
+.media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+.media a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+  color: var(--White);
+  border-radius: 50px;
+  border: 1px solid;
+  text-decoration: none;
+}
+.media a i {
+  font-size: 10px;
+}
+/* footer end */
