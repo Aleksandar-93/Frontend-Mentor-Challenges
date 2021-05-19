@@ -84,6 +84,11 @@ header .logo img {
   text-decoration: none;
   color: var(--Very-Dark-Blue);
 }
+.main-section {
+  padding-bottom: 100px;
+  background: url(../images/bg-curve-mobile.svg) no-repeat bottom center;
+  background-size: contain;
+}
 
 .text {
   padding: 35px;
@@ -305,6 +310,9 @@ footer {
 .list-links ul li a {
   text-decoration: none;
   color: #fff;
+}
+.list-links ul li a:hover {
+  color: var(--Desaturated-Blue);
 }
 
 .list-links ul li:nth-child(4) {
