@@ -36,6 +36,7 @@ img {
   font-weight: 600;
   font-size: 90%;
 }
+
 .btn:hover {
   cursor: pointer;
   background: var(--Light-Pink);
@@ -98,10 +99,14 @@ header .logo img {
 
 .communities-message {
   padding-bottom: 50px;
+  background: url(../images/bg-section-top-mobile-1.svg) no-repeat bottom;
+  background-size: contain;
 }
+
 .communities-message img {
   width: 30px;
 }
+
 .communities-message > div {
   display: flex;
   justify-content: normal;
@@ -110,18 +115,37 @@ header .logo img {
   text-align: left;
   padding-bottom: 100px;
 }
+
 .communities-message > div > div {
   width: 150px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 .communities-message p {
   color: #888;
 }
+
 .communities-message span {
   font-size: 380%;
   font-weight: 600;
+}
+
+.grow-together {
+  background-color: var(--Very-Pale-Blue);
+}
+
+.flowing-con {
+  padding-top: 100px;
+  background: url(../images/bg-section-bottom-mobile-1.svg) no-repeat top,
+    url(../images/bg-section-top-mobile-2.svg) no-repeat bottom;
+  background-size: contain;
+  padding-bottom: 100px;
+}
+
+.your-user {
+  background-color: var(--Very-Pale-Blue);
 }
 
 .section .img {
@@ -140,7 +164,14 @@ header .logo img {
   align-items: center;
   text-align: center;
   padding-bottom: 250px;
+  padding-top: 100px;
+  background: url(../images/bg-section-bottom-mobile-2.svg) no-repeat top,
+    url(../images/bg-footer-top-mobile.svg) no-repeat bottom;
+  background-size: contain;
+  position: relative;
+  top: 2px;
 }
+
 .ready-to-build h1 {
   font-size: 150%;
   padding: 20px 20px;
@@ -150,11 +181,13 @@ footer {
   color: #fff;
   background: var(--Very-Dark-Cyan);
 }
+
 .newslatter {
   text-align: left;
   padding: 25px;
   padding-bottom: 100px;
 }
+
 .newslatter h1 {
   padding-bottom: 10px;
 }
@@ -171,6 +204,7 @@ footer {
   text-indent: 15px;
   border: 1px solid #fff;
 }
+
 .sub-wrap button {
   background: var(--Pink);
   border: 1px solid var(--Pink);
@@ -181,6 +215,7 @@ footer {
   font-weight: 600;
   float: right;
 }
+
 .sub-wrap button:hover {
   background: var(--Light-Pink);
   cursor: pointer;
@@ -189,13 +224,16 @@ footer {
 .logo {
   padding: 20px 0;
 }
+
 .logo i {
   font-size: 240%;
 }
+
 .logo span {
   font-size: 230%;
   font-weight: 700;
 }
+
 .huddle-media {
   padding: 20px;
 }
@@ -203,6 +241,7 @@ footer {
 .info {
   padding: 10px 0;
 }
+
 .info div {
   display: flex;
   justify-content: flex-start;
@@ -220,14 +259,17 @@ footer {
   display: flex;
   justify-content: flex-start;
 }
+
 .soc-media a {
   margin: 0 5px;
   color: #fff;
   text-decoration: none;
 }
+
 .soc-media a:hover {
   color: deepskyblue;
 }
+
 .soc-media a i {
   font-size: 130%;
 }
