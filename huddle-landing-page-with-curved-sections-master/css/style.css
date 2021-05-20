@@ -102,6 +102,7 @@ header .logo img {
   padding-bottom: 50px;
   background: url(../images/bg-section-top-mobile-1.svg) no-repeat bottom;
   background-size: contain;
+  margin-bottom: -1px;
 }
 
 .communities-message img {
@@ -143,6 +144,7 @@ header .logo img {
     url(../images/bg-section-top-mobile-2.svg) no-repeat bottom;
   background-size: contain;
   padding-bottom: 100px;
+  margin-bottom: -1px;
 }
 
 .your-user {
@@ -179,6 +181,7 @@ header .logo img {
 footer {
   color: #fff;
   background: var(--Very-Dark-Cyan);
+  margin-top: -1px;
 }
 
 .newslatter {
@@ -338,31 +341,38 @@ footer {
   .huddle-media .logo {
     padding: 0;
   }
+
   .main-text {
     padding-bottom: 30px;
   }
+
   .text-btn {
     width: 85%;
     margin: 0 auto;
   }
+
   .main-text .img {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .main-text .img img {
     width: 85%;
   }
+
   .flowing-con {
     padding-top: 250px;
     padding-bottom: 250px;
   }
 }
+
 @media only screen and (min-width: 750px) {
   .communities-message {
     background: url(../images/bg-section-top-desktop-1.svg) no-repeat bottom;
     background-size: contain;
   }
+
   .flowing-con {
     background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat top,
       url(../images/bg-section-top-desktop-2.svg) no-repeat bottom;
@@ -374,9 +384,11 @@ footer {
       url(../images/bg-footer-top-desktop.svg) no-repeat bottom;
     background-size: contain;
   }
+
   .section img {
     width: 400px;
   }
+
   .text-btn p {
     width: 400px;
   }
@@ -386,6 +398,7 @@ footer {
   .text {
     width: 450px;
   }
+
   .section {
     justify-content: space-evenly;
   }
@@ -395,6 +408,7 @@ footer {
   footer {
     justify-content: space-around;
   }
+
   footer > div {
     width: 500px;
   }
