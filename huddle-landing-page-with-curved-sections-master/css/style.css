@@ -214,6 +214,7 @@ footer {
   border-radius: 5px;
   font-weight: 600;
   float: right;
+  margin-top: 30px;
 }
 
 .sub-wrap button:hover {
@@ -272,4 +273,21 @@ footer {
 
 .soc-media a i {
   font-size: 130%;
+}
+
+/* error message */
+.sub-wrap {
+}
+.error {
+  position: relative;
+}
+.error p {
+  position: absolute;
+  top: 36px;
+  left: 8px;
+  color: red;
+  display: none;
+}
+.err p {
+  display: block;
 }
