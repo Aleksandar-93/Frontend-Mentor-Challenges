@@ -277,6 +277,10 @@ footer {
   text-align: center;
   align-items: center;
 }
+.media a:hover {
+  color: var(--Moderate-Cyan);
+  border: 1px solid var(--Moderate-Cyan);
+}
 
 .error {
   height: 45px;
@@ -325,6 +329,14 @@ footer {
 
   .get-access-text {
     width: 70%;
+  }
+  .sec-links {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .list-links {
+    padding-top: 0;
   }
 }
 
