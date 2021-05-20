@@ -46,6 +46,7 @@ img {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   padding-bottom: 70px;
 }
@@ -164,12 +165,10 @@ header .logo img {
   align-items: center;
   text-align: center;
   padding-bottom: 250px;
-  padding-top: 100px;
+  padding-top: 200px;
   background: url(../images/bg-section-bottom-mobile-2.svg) no-repeat top,
     url(../images/bg-footer-top-mobile.svg) no-repeat bottom;
   background-size: contain;
-  position: relative;
-  top: 2px;
 }
 
 .ready-to-build h1 {
@@ -276,11 +275,10 @@ footer {
 }
 
 /* error message */
-.sub-wrap {
-}
 .error {
   position: relative;
 }
+
 .error p {
   position: absolute;
   top: 36px;
@@ -288,6 +286,122 @@ footer {
   color: red;
   display: none;
 }
+
 .err p {
   display: block;
+}
+
+/* media */
+@media only screen and (min-width: 480px) {
+  .communities-message {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .text {
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .section .text h1 {
+    font-size: 150%;
+  }
+
+  .grow-together {
+    flex-direction: row-reverse;
+  }
+
+  .your-user {
+    flex-direction: row-reverse;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 20px;
+  }
+
+  .newslatter {
+    padding-bottom: 0;
+    padding: 39px 25px 25px 25px;
+  }
+
+  .huddle-media .logo {
+    padding: 0;
+  }
+  .main-text {
+    padding-bottom: 30px;
+  }
+  .text-btn {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .main-text .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-text .img img {
+    width: 85%;
+  }
+  .flowing-con {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  .communities-message {
+    background: url(../images/bg-section-top-desktop-1.svg) no-repeat bottom;
+    background-size: contain;
+  }
+  .flowing-con {
+    background: url(../images/bg-section-bottom-desktop-1.svg) no-repeat top,
+      url(../images/bg-section-top-desktop-2.svg) no-repeat bottom;
+    background-size: contain;
+  }
+
+  .ready-to-build {
+    background: url(../images/bg-section-bottom-desktop-2.svg) no-repeat top,
+      url(../images/bg-footer-top-desktop.svg) no-repeat bottom;
+    background-size: contain;
+  }
+  .section img {
+    width: 400px;
+  }
+  .text-btn p {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .text {
+    width: 450px;
+  }
+  .section {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  footer {
+    justify-content: space-around;
+  }
+  footer > div {
+    width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .communities-message {
+    padding-bottom: 200px;
+  }
 }
