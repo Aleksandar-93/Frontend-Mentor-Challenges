@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -31,7 +32,7 @@
           <h1>Build The Community Your Fans Will Love</h1>
           <p>Huddle re-imagines the way we build communities. You have a voice, but so does
           your audience. Create connections with your users as you engage in genuine discussion.</p>
-          <button>Get Started For Free</button>
+          <button class="btn">Get Started For Free</button>
         </div>
         <div class="img">
           <img src="./images/screen-mockups.svg" alt="">
@@ -39,16 +40,20 @@
       </section>
       <!-- main section start -->
       <!-- communities-message start -->
-      <section class="communities-message section">
+      <section class="communities-message">
         <div class="commun-wrap">
-          <img src="./images/icon-communities.svg" alt="communities">
-          <span>1.4k+</span>
-          <p>Communities Formed</p>
+          <div>
+            <img src="./images/icon-communities.svg" alt="communities">
+            <span>1.4k+</span>
+            <p>Communities Formed</p>
+          </div>
         </div>
         <div class="message-wrap">
-          <img src="./images/icon-messages.svg" alt="communities">
-          <span>2.7m+</span>
-          <p>Messages Sent</p>
+          <div>
+            <img src="./images/icon-messages.svg" alt="communities">
+            <span>2.7m+</span>
+            <p>Messages Sent</p>
+          </div>
         </div>
       </section>
       <!-- communities-message end -->
@@ -91,7 +96,7 @@
       <!-- ready-to-build start -->
       <section class="ready-to-build">
         <h1>Ready To Build Your Community?</h1>
-        <button>Get Started For Free</button>
+        <button class="btn">Get Started For Free</button>
       </section>
       <!-- ready-to-build end -->
     </main>
@@ -112,7 +117,8 @@
       <!-- newslatter end -->
       <div class="huddle-media">
         <div class="logo">
-          <img src="./images/logo.svg" alt="">
+          <i class="far fa-comment-dots"></i>
+          <span>Huddle</span>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
         vestibulum a, ultrices quis sem.</p>
@@ -127,9 +133,9 @@
           </div>
         </div>
         <div class="soc-media">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
           <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></i></a>
         </div>
       </div>
     </footer>
