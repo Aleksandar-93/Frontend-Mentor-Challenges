@@ -244,6 +244,14 @@ footer {
 .info {
   padding: 10px 0;
 }
+.info a {
+  color: #fff;
+  text-decoration: none;
+}
+.info a:hover {
+  color: deepskyblue;
+  cursor: pointer;
+}
 
 .info div {
   display: flex;
@@ -365,6 +373,21 @@ footer {
     padding-top: 250px;
     padding-bottom: 250px;
   }
+  header > div {
+    margin: 0 30px;
+  }
+
+  footer > div {
+    width: 500px;
+  }
+  header .logo img {
+    width: 200px;
+  }
+
+  .header-btn button {
+    width: 140px;
+    height: 35px;
+  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -407,10 +430,6 @@ footer {
 @media only screen and (min-width: 1000px) {
   footer {
     justify-content: space-around;
-  }
-
-  footer > div {
-    width: 500px;
   }
 }
 
