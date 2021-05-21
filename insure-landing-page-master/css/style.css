@@ -44,7 +44,9 @@ header {
 .logo {
   padding: 20px 0;
 }
-
+.line {
+  display: none;
+}
 #btn {
   width: 25px;
   height: 25px;
@@ -52,7 +54,9 @@ header {
   outline: none;
   border: 1px sold #000;
 }
-
+.human-desktop-bg {
+  display: none;
+}
 #drop-menu {
   display: none;
 }
@@ -110,11 +114,7 @@ header {
   /* background-color: var(--Very-Dar-Violet); */
   position: relative;
 }
-main {
-  background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat 100%
-    40%;
-  background-size: 100px;
-}
+
 .text-p {
   height: 104%;
   width: 100%;
@@ -130,7 +130,18 @@ main {
 .humanizing .text p {
   padding: 20px 20px;
 }
-
+.text-background {
+  position: absolute;
+  top: 69%;
+  right: 0%;
+  width: 300px;
+  height: 300px;
+  z-index: 30;
+  background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat 100%
+    40%;
+  background-size: 100px;
+  background-color: transparent;
+}
 .we-are {
   display: flex;
   flex-direction: column;
@@ -197,12 +208,13 @@ main {
 }
 
 .logo-media {
-  padding: 40px;
+  padding: 40px 40px 60px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../images/bg-pattern-footer-mobile.svg) no-repeat left top;
-  background-size: contain;
+  /* background: url(../images/bg-pattern-footer-mobile.svg) no-repeat left top; */
+  /* background-size: contain; */
+  position: relative;
 }
 
 .media a {
@@ -210,6 +222,10 @@ main {
 }
 .media a img {
   width: 20px;
+}
+footer {
+  background: url(../images/bg-pattern-footer-mobile.svg) no-repeat left top;
+  background-size: contain;
 }
 .footer-links {
   padding-top: 30px;
@@ -239,12 +255,24 @@ main {
   color: var(--Dark-Violet);
 }
 .our-company p {
-  padding-top: 40px;
-  border-top: 1px solid var(--Grayish-Blue);
+}
+.border-bottom {
+  position: absolute;
+  bottom: -10px;
   width: 90%;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--Grayish-Blue);
+  opacity: 0.4;
 }
 /* MEDIA */ /* MEDIA */ /* MEDIA */ /* MEDIA */
 /* MEDIA */ /* MEDIA */ /* MEDIA */ /* MEDIA */
+@media only screen and (min-width: 500px) {
+  .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media only screen and (min-width: 580px) {
   #btn {
     display: none;
@@ -266,5 +294,108 @@ main {
   #drop-menu li:last-child {
     width: inherit;
     border: 1px solid;
+  }
+}
+@media only screen and (min-width: 700px) {
+  footer {
+    background: url(../images/bg-pattern-footer-desktop.svg) no-repeat left top;
+    background-size: 400px;
+  }
+  .footer-links {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 30px;
+  }
+  .links {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .logo-media {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+  }
+  .how-we-wrok-sec {
+    padding: 60px;
+  }
+  .how-we-wrok {
+    height: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cards {
+    display: flex;
+  }
+  .card {
+    align-items: flex-start;
+    text-align: left;
+  }
+  .we-are {
+    align-items: flex-start;
+    padding-left: 20px;
+  }
+  .different {
+    padding: 20px;
+  }
+  .humanizing {
+    position: relative;
+    display: flex;
+    background: var(--Dark-Violet);
+  }
+  .humanizing .img img {
+  }
+  .humanizing .text {
+    width: 550px;
+    background: transparent;
+    align-items: baseline;
+    text-align: left;
+  }
+  .humanizing .img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+  }
+  .text-p {
+    background: url(../images/bg-pattern-intro-left-desktop.svg) no-repeat 0% 0%;
+    background-size: 100px;
+    background-color: transparent;
+  }
+  .text-background {
+    background: url(../images/bg-pattern-intro-left-desktop.svg) no-repeat 0% 0%;
+    background-size: 100px;
+    background-color: transparent;
+    left: 0;
+    top: 80%;
+  }
+  .human-desktop-bg {
+    background: url(../images/bg-pattern-intro-right-desktop.svg) no-repeat
+      right;
+    background-size: contain;
+    background-color: transparent;
+    display: block;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 200;
+    right: 0;
+  }
+  .line {
+    display: inline;
+    padding: 2px;
+    width: 100px;
+    border-bottom: 1px solid var(--Dark-Grayish-Violet);
+    position: relative;
+    top: -25px;
+    left: 28px;
+  }
+  .humanizing .text p {
+    padding: 20px 30px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .different {
+    padding: 60px;
   }
 }
