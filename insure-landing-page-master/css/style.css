@@ -1,0 +1,119 @@
+/* headdings */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+/* body */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap");
+
+:root {
+  /* ### Primary */
+  --Dark-Violet: hsl(256, 26%, 20%);
+  --Grayish-Blue: hsl(216, 30%, 68%);
+  /* ### Neutral */
+  --Very-Dar-Violet: hsl(270, 9%, 17%);
+  --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Karla", sans-serif;
+}
+h1 {
+  font-family: "DM Serif Display", serif;
+}
+.view {
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  display: block;
+  margin: 0 30px;
+}
+header {
+  padding: 15px;
+}
+.logo-drop-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+}
+.logo img {
+}
+.nav-bar {
+}
+#btn {
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon-hamburger.svg) no-repeat center center;
+  outline: none;
+  border: 1px sold #000;
+}
+#drop-menu {
+}
+#drop-menu {
+  display: none;
+}
+#drop-menu ul {
+  background: var(--Dark-Violet);
+}
+#drop-menu li {
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+#drop-menu li:last-child {
+  width: 100%;
+}
+#drop-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+/* show drop menu */
+.show {
+  padding-bottom: 510px;
+}
+.show #btn {
+  background: url(../images/icon-close.svg) no-repeat center center;
+}
+.show #drop-menu {
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  height: 503px;
+  background: url(../images/bg-pattern-mobile-nav.svg) no-repeat bottom;
+  background-size: contain;
+  background-color: var(--Very-Dar-Violet);
+}
+
+/* MEDIA */
+@media only screen and (min-width: 580px) {
+  header {
+  }
+  #btn {
+    display: none;
+  }
+  #drop-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  #drop-menu li {
+    padding: 0 10px;
+  }
+  #drop-menu a {
+    color: #000;
+    padding: 0;
+    margin: 0;
+  }
+  #drop-menu li:last-child {
+    width: inherit;
+    border: 1px solid;
+  }
+}
