@@ -20,12 +20,15 @@
 }
 body {
   font-family: "Karla", sans-serif;
+  background: var(--Very-Light-Gray);
 }
 h1 {
   font-family: "DM Serif Display", serif;
 }
 .view {
-  border: 1px solid #fff;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
   padding: 5px 20px;
   display: block;
   margin: 0 30px;
@@ -36,13 +39,12 @@ header {
 .logo-drop-menu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo {
+  padding: 20px 0;
 }
-.logo img {
-}
-.nav-bar {
-}
+
 #btn {
   width: 25px;
   height: 25px;
@@ -50,8 +52,7 @@ header {
   outline: none;
   border: 1px sold #000;
 }
-#drop-menu {
-}
+
 #drop-menu {
   display: none;
 }
@@ -91,10 +92,160 @@ header {
   background-color: var(--Very-Dar-Violet);
 }
 
-/* MEDIA */
+/* main */
+
+.humanizing .img img {
+  width: 100%;
+}
+.humanizing .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 70px 20px 60px 20px;
+  margin-top: -4px;
+  color: #fff;
+  background: url(../images/bg-pattern-intro-left-mobile.svg) no-repeat top left;
+  /* background-color: var(--Very-Dar-Violet); */
+  position: relative;
+}
+main {
+  background: url(../images/bg-pattern-intro-right-mobile.svg) no-repeat 100%
+    40%;
+  background-size: 100px;
+}
+.text-p {
+  height: 104%;
+  width: 100%;
+  background: var(--Very-Dar-Violet);
+  position: absolute;
+  z-index: -2;
+}
+.humanizing .text h1 {
+  font-size: 204%;
+  padding: 0px 30px;
+  letter-spacing: 3px;
+}
+.humanizing .text p {
+  padding: 20px 20px;
+}
+
+.we-are {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.we-are span {
+  width: 120px;
+  height: 2px;
+  border-top: 1px solid var(--Dark-Grayish-Violet);
+}
+.we-are h1 {
+  font-size: 200%;
+  letter-spacing: 2px;
+  padding: 30px 0;
+}
+.cards {
+  margin-bottom: 100px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.card h1 {
+  margin: 10px 0;
+  font-size: 130%;
+  letter-spacing: 1px;
+}
+
+.how-we-wrok {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 290px;
+  padding: 20px;
+  background: url(../images/bg-pattern-how-we-work-mobile.svg) no-repeat right
+    top;
+  background-color: var(--Very-Dar-Violet);
+}
+
+.title h1 {
+  font-size: 200%;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.we-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 26px;
+}
+.we-work a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px;
+  width: 150px;
+}
+
+.logo-media {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../images/bg-pattern-footer-mobile.svg) no-repeat left top;
+  background-size: contain;
+}
+
+.media a {
+  margin: 0 5px;
+}
+.media a img {
+  width: 20px;
+}
+.footer-links {
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.links p {
+  padding: 20px 0;
+  color: var(--Dark-Grayish-Violet);
+}
+.links ul {
+  list-style: none;
+}
+.links ul li {
+  padding: 5px 0;
+}
+.links ul li a {
+  text-decoration: none;
+  color: var(--Dark-Violet);
+}
+.our-company p {
+  padding-top: 40px;
+  border-top: 1px solid var(--Grayish-Blue);
+  width: 90%;
+}
+/* MEDIA */ /* MEDIA */ /* MEDIA */ /* MEDIA */
+/* MEDIA */ /* MEDIA */ /* MEDIA */ /* MEDIA */
 @media only screen and (min-width: 580px) {
-  header {
-  }
   #btn {
     display: none;
   }
