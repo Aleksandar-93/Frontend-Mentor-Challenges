@@ -254,8 +254,7 @@ footer {
   text-decoration: none;
   color: var(--Dark-Violet);
 }
-.our-company p {
-}
+
 .border-bottom {
   position: absolute;
   bottom: -10px;
@@ -300,6 +299,7 @@ footer {
   footer {
     background: url(../images/bg-pattern-footer-desktop.svg) no-repeat left top;
     background-size: 400px;
+    margin-top: 100px;
   }
   .footer-links {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -342,8 +342,7 @@ footer {
     display: flex;
     background: var(--Dark-Violet);
   }
-  .humanizing .img img {
-  }
+
   .humanizing .text {
     width: 550px;
     background: transparent;
